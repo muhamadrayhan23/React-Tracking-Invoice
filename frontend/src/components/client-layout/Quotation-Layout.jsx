@@ -1,0 +1,14 @@
+import ClientSidebar from "../sidebar/ClientSidebar";
+
+const ClientQuotationLayout = ({ children }) => {
+    return (
+        <div className="flex min-h-screen">
+            <ClientSidebar />
+            <main className="flex-1 bg-gray-50">
+                {children}
+            </main>
+        </div>
+    );
+};
+
+export default ClientQuotationLayout;
